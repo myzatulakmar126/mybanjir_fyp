@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MyBanjir</string>
+    <string-array name="roles">
+        <item>Flood Victim</item>
+        <item>Rescuer</item>
+        <item>Admin</item>
+    </string-array>
+    <string-array name="help">
+        <item>Stuck home</item>
+        <item>Sufficient food</item>
+        <item>Floodwater</item>
+        <item>Cleaning home</item>
+    </string-array>
+    <string-array name="status">
+        <item>Available</item>
+        <item>In Action</item>
+    </string-array>
+    <string-array name="statusShelter">
+        <item>Open</item>
+        <item>Closed</item>
+    </string-array>
+</resources>

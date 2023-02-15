@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEEB"
+    tools:context=".homeRescuer">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:text="MENU"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+
+    <TextView
+        android:id="@+id/shelter_box"
+        android:layout_width="152dp"
+        android:layout_height="155dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/sos_box"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="99dp"
+        android:layout_height="25dp"
+        android:text="Relief Shelter"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shelter_box"
+        app:layout_constraintEnd_toEndOf="@+id/shelter_box"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/shelter_box"
+        app:layout_constraintTop_toTopOf="@+id/shelter_box"
+        app:layout_constraintVertical_bias="0.946" />
+
+    <TextView
+        android:id="@+id/sos_box"
+        android:layout_width="152dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="332dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="99dp"
+        android:layout_height="25dp"
+        android:text="Manage SOS"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sos_box"
+        app:layout_constraintEnd_toEndOf="@+id/sos_box"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="@+id/sos_box"
+        app:layout_constraintTop_toTopOf="@+id/sos_box"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <ImageView
+        android:id="@+id/iconHome"
+        android:layout_width="123dp"
+        android:layout_height="112dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shelter_box"
+        app:layout_constraintEnd_toEndOf="@+id/shelter_box"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="@+id/shelter_box"
+        app:layout_constraintTop_toTopOf="@+id/shelter_box"
+        app:layout_constraintVertical_bias="0.255"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <ImageView
+        android:id="@+id/historylist"
+        android:layout_width="136dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sos_box"
+        app:layout_constraintEnd_toEndOf="@+id/sos_box"
+        app:layout_constraintStart_toStartOf="@+id/sos_box"
+        app:layout_constraintTop_toTopOf="@+id/sos_box"
+        app:layout_constraintVertical_bias="0.326"
+        app:srcCompat="@drawable/ic_baseline_view_list_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

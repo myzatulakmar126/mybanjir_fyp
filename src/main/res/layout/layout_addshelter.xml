@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEEB"
+    android:orientation="vertical"
+    tools:context=".shelterActivity">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Picture"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/uploadimage"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_baseline_upload_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SHELTER NAME"/>
+
+        <EditText
+            android:id="@+id/txtShelterName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="start|center_vertical"
+            android:background="@drawable/border"
+            android:layout_marginTop="5dp"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ADDRESS"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PHONE NUMBER"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtPhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="STATUS"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/statRel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginTop="5dp"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#0376A5"
+            android:text="SUBMIT"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+</ScrollView>

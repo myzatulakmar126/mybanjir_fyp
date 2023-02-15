@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEEB"
+    tools:context=".AddSosActivity">
+
+    <TextView
+        android:id="@+id/frame2"
+        android:layout_width="371dp"
+        android:layout_height="648dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <TextView
+        android:id="@+id/fvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toTopOf="@+id/frame2"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <EditText
+        android:id="@+id/txtfvName"
+        android:layout_width="337dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toTopOf="@+id/frame2"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADDRESS"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toBottomOf="@+id/txtfvName"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <EditText
+        android:id="@+id/txtfvAddress"
+        android:layout_width="337dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toBottomOf="@+id/txtfvName"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/typeHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TYPE HELP"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toBottomOf="@+id/txtfvAddress"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <Spinner
+        android:id="@+id/spinHelp"
+        android:layout_width="337dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toBottomOf="@+id/txtfvAddress"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/remarkfv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REMARK VICTIM"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toBottomOf="@+id/spinHelp"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <EditText
+        android:id="@+id/txtRemarkfv"
+        android:layout_width="337dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toBottomOf="@+id/spinHelp"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STATUS"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toBottomOf="@+id/txtRemarkfv"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <Spinner
+        android:id="@+id/spinStatus"
+        android:layout_width="337dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toBottomOf="@+id/txtRemarkfv"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <TextView
+        android:id="@+id/remarkRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REMARK RESCUER"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toBottomOf="@+id/spinStatus"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <EditText
+        android:id="@+id/txtRemarkres"
+        android:layout_width="337dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toBottomOf="@+id/spinStatus"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="168dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#0376A5"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="@+id/frame2"
+        app:layout_constraintEnd_toEndOf="@+id/frame2"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/frame2"
+        app:layout_constraintTop_toTopOf="@+id/frame2"
+        app:layout_constraintVertical_bias="0.959" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEEB"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:text="MENU"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/account_box"
+        android:layout_width="152dp"
+        android:layout_height="155dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.282" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:text="Account"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/account_box"
+        app:layout_constraintEnd_toEndOf="@+id/account_box"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/icon_account"
+        app:layout_constraintTop_toTopOf="@+id/icon_account"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <TextView
+        android:id="@+id/shelter_box"
+        android:layout_width="152dp"
+        android:layout_height="155dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toEndOf="@+id/account_box"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.282" />
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="99dp"
+        android:layout_height="25dp"
+        android:text="Relief Shelter"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shelter_box"
+        app:layout_constraintEnd_toEndOf="@+id/shelter_box"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/shelter_box"
+        app:layout_constraintTop_toTopOf="@+id/shelter_box"
+        app:layout_constraintVertical_bias="0.946" />
+
+    <TextView
+        android:id="@+id/sos_box"
+        android:layout_width="152dp"
+        android:layout_height="155dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_box"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="99dp"
+        android:layout_height="25dp"
+        android:text="History SOS"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sos_box"
+        app:layout_constraintEnd_toEndOf="@+id/sos_box"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="@+id/sos_box"
+        app:layout_constraintTop_toTopOf="@+id/sos_box"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <TextView
+        android:id="@+id/map_box"
+        android:layout_width="152dp"
+        android:layout_height="155dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toEndOf="@+id/sos_box"
+        app:layout_constraintTop_toBottomOf="@+id/shelter_box"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <TextView
+        android:id="@+id/map"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:text="Map"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/map_box"
+        app:layout_constraintEnd_toEndOf="@+id/map_box"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="@+id/map_box"
+        app:layout_constraintTop_toTopOf="@+id/map_box"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <ImageView
+        android:id="@+id/icon_account"
+        android:layout_width="148dp"
+        android:layout_height="119dp"
+        app:layout_constraintBottom_toBottomOf="@+id/account_box"
+        app:layout_constraintEnd_toEndOf="@+id/account_box"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/account_box"
+        app:layout_constraintTop_toTopOf="@+id/account_box"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/ic_baseline_manage_accounts_24" />
+
+    <ImageView
+        android:id="@+id/iconMap"
+        android:layout_width="128dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map_box"
+        app:layout_constraintEnd_toEndOf="@+id/map_box"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/map_box"
+        app:layout_constraintTop_toTopOf="@+id/map_box"
+        app:layout_constraintVertical_bias="0.175"
+        app:srcCompat="@drawable/ic_baseline_map_24" />
+
+    <ImageView
+        android:id="@+id/iconHome"
+        android:layout_width="123dp"
+        android:layout_height="112dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shelter_box"
+        app:layout_constraintEnd_toEndOf="@+id/shelter_box"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/shelter_box"
+        app:layout_constraintTop_toTopOf="@+id/shelter_box"
+        app:layout_constraintVertical_bias="0.219"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <ImageView
+        android:id="@+id/historylist"
+        android:layout_width="136dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sos_box"
+        app:layout_constraintEnd_toEndOf="@+id/sos_box"
+        app:layout_constraintStart_toStartOf="@+id/sos_box"
+        app:layout_constraintTop_toTopOf="@+id/sos_box"
+        app:layout_constraintVertical_bias="0.173"
+        app:srcCompat="@drawable/ic_baseline_view_list_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
